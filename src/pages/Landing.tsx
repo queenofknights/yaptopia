@@ -348,7 +348,7 @@ export default function Landing() {
             className="mb-8 text-[13px] font-semibold text-[#0B4F6C] tracking-widest uppercase"
             style={{ opacity: 0.72 }}
           >
-            Multiplayer creative writing
+            Multiplayer creative crafting
           </p>
 
           {/* Headline */}
