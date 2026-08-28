@@ -402,7 +402,7 @@ export default function Landing() {
             className="mt-8 text-[13px] text-[#1D2D44]"
             style={{ opacity: 0.42 }}
           >
-            Joined by 4,200+ writers in the last 30 days
+            Joined by 300+ crafters in the last 30 days
           </p>
         </main>
       </div>
@@ -433,7 +433,7 @@ export default function Landing() {
 
         {/* Links */}
         <div className="flex items-center gap-6">
-          {["About", "How it Works", "Community", "Writers"].map(link => (
+          {["About", "How it Works", "Community", "Creators"].map(link => (
             <button key={link}
               className="text-[12px] font-medium text-white transition-opacity hover:opacity-100"
               style={{ opacity: 0.48 }}>
@@ -444,7 +444,7 @@ export default function Landing() {
 
         {/* Tagline */}
         <p className="text-[12px] text-white" style={{ opacity: 0.34 }}>
-          Made for writers who wander
+          Made for creators who wander
         </p>
       </footer>
     </div>
