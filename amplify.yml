@@ -1,13 +1,14 @@
 version: 1
+
+applications:
+  - appRoot: frontend
 frontend:
   phases:
     preBuild:
       commands:
-        _ cd frontend
         - npm ci --cache .npm --prefer-offline
     build:
       commands:
-        - cd frontend
         - npm run build
   artifacts:
     baseDirectory: dist
@@ -15,4 +16,4 @@ frontend:
       - '**/*'
   cache:
     paths:
-      - frontend/node_modules/**/*
+      - node_modules/**/*
