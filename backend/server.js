@@ -1,6 +1,6 @@
 require('dotenv').config();
 const app = require('./app');
-const sequelize = require('./config/database');
+const sequelize = require('./config/db');
 
 // Ensure models and relationships are registered
 require('./models'); 
@@ -15,7 +15,7 @@ const startServer = async () => {
 
     // Sync database (Use { alter: true } during active dev to update schema safely)
     await sequelize.sync({ alter: true });
-    console.log('Database models synchronized.');
+    console.log('Database models synced.');
 
     // Start Express Server
     app.listen(PORT, () => {

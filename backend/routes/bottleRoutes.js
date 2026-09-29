@@ -1,7 +1,7 @@
 const express = require('express');
 const { body } = require('express-validator');
 const bottleController = require('../controllers/bottleController');
-const { verifyToken } = require('../middleware/auth');
+const { verifyToken } = require('../middlewares/auth');
 
 const router = express.Router();
 

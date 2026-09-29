@@ -1,5 +1,5 @@
-const User = require('./User');
-const Bottle = require('./Bottle');
+const User = require('./userModel');
+const Bottle = require('./bottleModel');
 
 // Associations
 User.hasMany(Bottle, { foreignKey: 'castawayId', as: 'bottles' });
